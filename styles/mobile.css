@@ -68,7 +68,6 @@
       background-position: top !important;
 }
     .swiper{
-        
         height:93vh !important;
     }
     .logo{
@@ -133,6 +132,7 @@
         width: 100%;
         height: 100vh;
         overflow-y: scroll !important;
+        background:white !important;
     }
     .show-art .popup-card-art{
         transform: translateY(0);
