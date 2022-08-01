@@ -247,6 +247,10 @@
 .show-art .popup-card-art{
     transform: translateY(0);
 }
+.button-popup-about{
+    top:10%;
+}
+    
 /* BLUECORN POPUP VIEW */
 .popup-art{
     display: grid;
