@@ -418,7 +418,6 @@
     top:11% !important;
 }
     .show-popup{
-        height: 100vh;
         overflow-y: scroll !important;
     }
     .heading-popup{
