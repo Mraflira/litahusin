@@ -415,11 +415,10 @@
 
 @media(max-width:768px) {
     .button-popup-about{
-    top:2% !important;
+    top:5% !important;
 }
     .show-popup{
         overflow-y: scroll !important;
-        top:10% !important;
     }
     .heading-popup{
         font-size: 7vw;
