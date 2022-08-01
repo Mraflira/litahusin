@@ -189,18 +189,18 @@
     .box-content h1{
         text-align: start;
         text-transform: uppercase;
-        font-size: 8vw;
+        font-size: 6.6vw;
         letter-spacing: 2px;
     }
     .box-content p{
         margin-top: 0.7vw;
-        font-size: 4.3vw;
+        font-size: 3.3vw;
         margin-bottom: 1vw;
         padding-right: 2vw;
         font-weight: 500;
     }
     .box-content span{
-        font-size: 2vh;
+        font-size: 2.8vw;
         font-weight: 300;
     }
     .logo-box{
