@@ -67,7 +67,8 @@
     background:green;
 }
     .swiper{
-      background-position: center;
+        background-image: url(../public/image/digital-gallery.jpg);
+      background-position: top;
         height:93vh !important;
     }
     .logo{
