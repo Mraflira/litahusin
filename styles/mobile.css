@@ -148,7 +148,7 @@
         animation-name: popup;
         transform: translateY(100%);
         transition: 0.4s all;
-        margin-top:40vw;
+        margin-top:9vw;
     }
     .popup-art{
         grid-template-columns: 100%;
