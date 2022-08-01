@@ -148,7 +148,7 @@
         animation-name: popup;
         transform: translateY(100%);
         transition: 0.4s all;
-        margin-top:4vw;
+        margin-top:40vw;
     }
     .popup-art{
         grid-template-columns: 100%;
@@ -195,13 +195,13 @@
     }
     .box-content p{
         margin-top: 0.7vw;
-        font-size:4.6vw;
+        font-size:4.1vw;
         margin-bottom: 1vw;
         padding-right: 2vw;
         font-weight: 500;
     }
     .box-content span{
-        font-size: 3.6vw;
+        font-size: 3.4vw;
         font-weight: 300;
     }
     .logo-box{
