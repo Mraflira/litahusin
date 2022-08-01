@@ -419,6 +419,7 @@
 }
     .show-popup{
         overflow-y: scroll !important;
+        top:10% !important;
     }
     .heading-popup{
         font-size: 7vw;
