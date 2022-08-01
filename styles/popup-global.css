@@ -430,6 +430,7 @@
         height: max-content;
         width:92%;
         top: 10%;
+        margin-top:3vw !important;
         position: relative;
     }
     .pop-upBox-about{
