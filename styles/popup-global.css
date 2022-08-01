@@ -415,7 +415,7 @@
 
 @media(max-width:768px) {
     .button-popup-about{
-    top:11% !important;
+    top:8% !important;
 }
     .show-popup{
         overflow-y: scroll !important;
