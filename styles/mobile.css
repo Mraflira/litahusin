@@ -62,7 +62,7 @@
   /* DIGITAL GALLERY */
     .swiper{
       background-position: center;
-        height:90vh;
+        height:90vh !important;
     }
     .logo{
       left:inherit;
