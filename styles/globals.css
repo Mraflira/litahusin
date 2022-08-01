@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media(max-width:768px){
+  /* HOME */
+  .header{
+    background-position: right top;
+  }
+  .heading{
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    width: 100%;
+  }
+  .heading img{
+    width: 30vh;
+    margin-left: 0;
+  }
+  .heading h1{
+    font-size: 5.5vh;
+    margin-top: -1vh;
+    letter-spacing: 0.2vh;
+  }
+  .heading-desc{
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+  }
+  .heading-desc p{
+    width: 80%;
+    font-size: 3.5vw;
+    margin-top: 0;
+    margin-bottom:3vh;
+  }
+  .heading-desc button{
+    width: max-content;
+    height: max-content;
+    padding: 1vw 5vw;
+    font-size: 3.6vw;
+    margin-top: 0;
+    letter-spacing: 0.1vh;
+  }
+  #show{
+    height: 14vh;
+  }
+  #show p{
+    font-size: 2.1vh;
+  }
+  .menu{
+    height:86vh;
+    display: none;
+  }
+
+
+/* DIGITAL GALLERY */
+  .swiper{
+    background-position: center;
+  }
+  .logo{
+    left:inherit;
+    right: 0%;
+    top: 0%;
+    background-image: url(../public/image/bg-logo.png);
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    width: 18vh;
+    padding: 4vh 0;
+    text-align: center;
+  }
+  .logo img{
+    width: 13vh;
+  }
+  .swiper-slide{
+    width: 100% !important;
+  }
+  .info-button{
+    top: 40vh;
+    right: 3vh;
+    width: 9vh;
+    height: 9vh;
+    border-radius:10vw;
+    font-size: 2.3vh;
+  }
+  .bluecorn{
+    width: 85vw;
+    margin-top: 20vh;
+  }
+  .anak-perempuan{
+    width: 71vw;
+    margin-top: 20vh;
+  }
+  .abstrak{
+    width:79vw;
+    margin-top: 20vh;
+  }
+  .batang-pohon{
+    width:88vw;
+    margin-top: 27vh;
+  }
+  .swiper-slide h1{
+    font-size: 8vw;
+    margin-top: 1vw;
+  }
+/* COPYRIGHT */
+  .copyright{
+    left: 0.9vh;
+    bottom: 2vh;
+    font-size: 0.9vh;
+  }
+
+/* POPUP-VIEW */
+  .popup{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:0;
+    height: 100vh ;
+    overflow-y:scroll ;
+  }
+  .close-btn{
+    right: 4%;
+    top: 3%;
+    z-index:20 !important;
+  }
+  .pop-upBox{
+    grid-template-columns:100%;
+    padding-bottom: 6vw;
+  }
+  .image-box{
+    text-align: center !important;
+    position: relative;
+    background-color: aquamarine;
+    height:93vw !important;
+  }
+  .image-box img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 0;
+  }
+  .image-box2 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 0;
+  }
+  .image-box3 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 0;
+  }
+  .image-box4 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: top;
+    margin-right: 0;
+  }
+  .box-content{
+    padding-top: 2vw;
+    padding-left: 5vw;
+    padding-right:4vw;
+  }
+  .box-content h1{
+    font-size:7vw;
+    letter-spacing: 2px;
+  }
+  .box-content p{
+    margin-top: 1vw;
+    /*font-size: 2.3vh;*/
+    font-size:4vw;
+    margin-bottom: 1.3vw;
+  }
+  .box-content span{
+    font-size: 3.4vw;
+  }
+  .logo-box{
+    gap: 3vw;
+    margin-top: 3vw;
+    margin-left: 5vw;
+  }
+  .logo-box img{
+    width:19vw;
+  }
+  .logo-box p{
+    font-size: 4vw;
+  }
+  
+/* POPUP ABOUT */
+.popup-view5{
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y:scroll ;
+  }
+  .heading-about{
+    font-size: 7vw;
+    letter-spacing: 0.1vw;
+    top: 3%;
+  }
+  .popup-card-about{
+    width: 92%;
+    height:90vh;
+  }
+  .pop-upBox-about{
+    grid-template-columns:100%;
+    width: 100%;
+    padding-bottom: 2vw;
+    background:white;
+  }
+  
+  .image-box-5{
+    width: 100%;
+    height: 55vw;
+    position: relative;
+  }
+  .image-icon{
+    gap: 2vw;
+    margin-top: 1.6vh;
+  }
+  .image-icon ion-icon{
+    font-size: 2.6vh;
+  }
+  .box-content-5{
+    padding-right: 4.5vw;
+    margin-left: 4vw;
+    padding-top: 7.2vw !important;
+  }
+  .box-content-5 img{
+    width: 32vw;
+  }
+  .box-content-5 p{
+    font-size: 3.4vw;
+    letter-spacing:0.2px;
+    text-align:justify;
+    padding-right: 0 !important;
+    margin:2.3vw 0;
+  }
+  .logo-box-5{
+    margin-top: 1vw;
+  }
+  .logo-box-5 h1{
+    font-size: 3.7vw;
+  }
+  .logo-box-5 p{
+    font-size: 3.3vw;
+    margin-top: 1.4vw;
+  }
+  .close{
+    top: -4.7%;
+  }
+  .close img{
+    width: 3.4vh;
+  }
+  .swiper-button-next, .swiper-button-prev{
+      top:97% !important;
+      width:7vh;
+  }
+  
+  
+  .popup-view6{
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow-y:scroll !important;
+  }
+  .popup-card-contact{
+    width: 90%;
+    height:91vh;
+    background:white;
+  }
+  
+  .contact-address h1{
+    font-size:5vw;
+    margin-bottom: 0.9vw;
+  }
+  .contact-address p{
+    font-size: 3.4vw;
+  }
+  .email-address ion-icon{
+    font-size: 3.2vw;
+  }
+  .email-address span{
+    font-size: 3.3vw;
+  }
+  .sosmed ion-icon{
+    font-size: 6.7vw;
+  }
+  .contact-form h1{
+    font-size: 3.8vw;
+    margin-top:1.4vw;
+  }
+  .form input{
+    margin-bottom: 1.8vw;
+    padding: 1.6vw 1.9vw;
+    font-size: 3.8vw;
+    border: 0.1vw solid black;
+  }
+  .form input::placeholder{
+    font-size: 3.8vw;
+  }
+  .form textarea{
+    margin-bottom: 1.8vw;
+    padding: 1.6vw 1.9vw;
+    font-size: 3.8vw;
+  }
+  .form textarea::placeholder{
+    font-size: 3.8vw;
+  }
+  .form button{
+    font-size: 3.8vw;
+    padding: 1.6vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width:992px){
+    /* HOME */
+  .header{
+    background-position: right top;
+  }
+  .heading{
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
+    text-align: center;
+    width: 100%;
+  }
+  .heading img{
+    width: 30vh;
+    margin-left: 0;
+  }
+  .heading h1{
+    font-size: 5.5vh;
+    margin-top: -1vh;
+    letter-spacing: 0.2vh;
+  }
+  .heading-desc{
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+  }
+  .heading-desc p{
+    width: 80%;
+    font-size: 3.5vw;
+    margin-top: 0;
+    margin-bottom:3vh;
+  }
+  .heading-desc button{
+    width: max-content;
+    height: max-content;
+    padding: 1vw 5vw;
+    font-size: 3.6vw;
+    margin-top: 0;
+    letter-spacing: 0.1vh;
+  }
+  .sidebar-menu{
+    width: 14vh;
+  }
+  #show{
+    height: 14vh;
+  }
+  #show p{
+    font-size: 2.1vh;
+  }
+  .menu{
+    height:86vh;
+    display: none;
+  }
+  /* .menu-box ul li{
+    margin-bottom:7vh;
+    font-size: 2.3vh;
+  }
+  .menu-box ul li button{
+    font-size: 2.3vh;
+  } */
+
+/* DIGITAL GALLERY */
+  .swiper{
+    background-position: center;
+  }
+  .logo{
+    left:inherit;
+    right: 0%;
+    top: 0%;
+    background-image: url(../public/image/bg-logo.png);
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    width: 18vh;
+    padding: 4vh 0;
+    text-align: center;
+  }
+  .logo img{
+    width: 13vh;
+  }
+  .swiper-slide{
+    width: 100% !important;
+  }
+  .info-button{
+    top: 30vh;
+    right: 3vh;
+    width: 10vh;
+    height: 10vh;
+    border-radius:10vw;
+    font-size: 2.6vh;
+  }
+  .bluecorn{
+    width: 85vw;
+    margin-top: 22vh;
+  }
+  .anak-perempuan{
+    width: 71vw;
+    margin-top: 22vh;
+  }
+  .abstrak{
+    width:79vw;
+    margin-top: 22vh;
+  }
+  .batang-pohon{
+    width:88vw;
+    margin-top: 29vh;
+  }
+  .swiper-slide h1{
+    font-size: 8vw;
+    margin-top: 1vw;
+  }
+/* COPYRIGHT */
+  .copyright{
+    left: 0.9vh;
+    bottom: 2vh;
+    font-size: 0.9vh;
+  }
+
+/* POPUP-VIEW */
+  .popup{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top:0;
+    height: 100vh ;
+    overflow-y:scroll ;
+  }
+  .close-btn{
+    right: 4%;
+    top: 3%;
+    z-index:20 !important;
+  }
+  .pop-upBox{
+    grid-template-columns:100%;
+    padding-bottom: 6vw;
+  }
+  .image-box{
+    text-align: center !important;
+    position: relative;
+    background-color: aquamarine;
+    height:93vw !important;
+  }
+  .image-box img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 0;
+  }
+  .image-box2 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 0;
+  }
+  .image-box3 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 0;
+  }
+  .image-box4 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: top;
+    margin-right: 0;
+  }
+  .box-content{
+    padding-top: 2vw;
+    padding-left: 5vw;
+    padding-right:4vw;
+  }
+  .box-content h1{
+    font-size:7vw;
+    letter-spacing: 2px;
+  }
+  .box-content p{
+    margin-top: 1vw;
+    /*font-size: 2.3vh;*/
+    font-size:4vw;
+    margin-bottom: 1.3vw;
+  }
+  .box-content span{
+    font-size: 3.4vw;
+  }
+  .logo-box{
+    gap: 3vw;
+    margin-top: 3vw;
+    margin-left: 5vw;
+  }
+  .logo-box img{
+    width:19vw;
+  }
+  .logo-box p{
+    font-size: 4vw;
+  }
+  
+/* POPUP ABOUT */
+  .heading-about{
+    font-size: 7vw;
+    letter-spacing: 0.1vw;
+    top: 0%;
+  }
+  .popup-card-about{
+    width: 92%;
+  }
+  .pop-upBox-about{
+    grid-template-columns:100%;
+    width: 100%;
+    padding-bottom: 2vw;
+  }
+  .image-box-5{
+    height: 63vw;
+    position: relative;
+  }
+  .image-box-5 img{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: 50% 20%;
+    position: absolute;
+  }
+  .image-icon{
+    gap: 2vw;
+    margin-top: 1.6vh;
+  }
+  .image-icon ion-icon{
+    font-size: 6vw;
+  }
+  .box-content-5{
+    padding-right: 4.5vw;
+    margin-left: 4vw;
+    padding-top: 10vw !important;
+  }
+  .box-content-5 img{
+    width: 36vw;
+  }
+  .box-content-5 p{
+    font-size: 2.5vw;
+    padding-right: 3vw !important;
+  }
+  .logo-box-5{
+    margin-top: 1vw;
+  }
+  .logo-box-5 h1{
+    font-size: 2.5vw;
+  }
+  .logo-box-5 p{
+    font-size: 2vw;
+    margin-top: 1.4vw;
+  }
+  .close{
+    top: -4.7%;
+  }
+  .close img{
+    width: 3.4vh;
+  }
+}
+
+.gmaps{
+  width: 100%;
+  height: 20vw;
+  position: relative;
+}
+.contact-content{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  height: max-content;
+  padding: 1.5vw 4.5vw;
+}
+.contact-address h1{
+  font-size: 1.3vw;
+  margin-bottom: 0.9vw;
+}
+.contact-address p{
+  font-size: 1vw;
+  font-weight: 600;
+  font-style: italic;
+}
+.address-call{
+  margin-top: 1.3vw;
+}
+.email-address{
+  display: flex;
+  align-items: center;
+  gap: 0.6vw;
+  margin-bottom: 0.5vw;
+}
+.email-address ion-icon{
+  font-size: 1.5vw;
+}
+.email-address span{
+  font-size: 1vw;
+  font-weight: 500;
+}
+.sosmed{
+  margin-top: 3vw;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+.sosmed ion-icon{
+  font-size: 2.1vw;
+}
+.contact-form h1{
+  text-transform: uppercase;
+  font-size: 2.6vw;
+  letter-spacing: 0.1vw;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+}
+.form input{
+  margin-bottom: 0.5vw;
+  padding: 0.3vw 0.6vw;
+  color: #000000;
+  font-size: 0.8vw;
+  border: 0.1vw solid black;
+  outline: none;
+}
+.form input::placeholder{
+  font-size: 0.8vw;
+  font-style: italic;
+  font-weight: 400;
+  color: #000000;
+}
+.form textarea{
+  margin-bottom: 0.5vw;
+  padding: 0.3vw 0.6vw;
+  color: #000000;
+  font-size: 0.8vw;
+  border: 0.1vw solid black;
+  outline: none;
+}
+.form textarea::placeholder{
+  font-size: 0.8vw;
+  font-style: italic;
+  font-weight: 400;
+  color: #000000;
+}
+.form button{
+  border: none;
+  background: black;
+  font-size: 0.9vw;
+  padding: 0.3vw;
+  color: white;
+  font-weight: 400;
+  cursor: pointer;
+}

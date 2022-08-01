@@ -1,0 +1,550 @@
+.show-popup{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    transition: all 0.5s;
+    z-index: 12;
+    opacity: 1;
+    background-image: url(../public/image/background-about.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.hide-popup{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2 !important;
+    height:100vh;
+    opacity:0;
+    transition: all 0.5s;
+    background-image: url(../public/image/background-about.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.heading-popup{
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    letter-spacing: 0.1vw;
+    text-align: center;
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    transition: all 0.4s;
+    opacity: 0;
+}
+.show-popup .heading-popup{
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+}
+.heading-popup-contact{
+    top: 10%;
+}
+.button-popup{
+    position: absolute;
+    top: 11%;
+    right: 6.3%;
+    border: none;
+    background: transparent;
+    font-size: 2.6vw;
+    cursor: pointer;
+}
+.button-popup-about{
+    position: absolute;
+    top: 7%;
+    right: 6.3%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    width: 37px;
+    height: 37px;
+}
+.button-popup-contact{
+    position: absolute;
+    top: 10%;
+    right: 13%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    width: 37px;
+    height: 37px;
+}
+.show-popup .close-image{
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: close;
+}
+.hide-popup .close-image{
+    animation-duration: 0.8s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: close-popup;
+}
+@keyframes close {
+    0% {
+      transform: scale(0) rotate(360deg);
+    }
+    100% {
+      transform: scale(1) rotate(0);
+    }
+}
+@keyframes close-popup {
+    0% {
+      transform: scale(1) rotate(0);
+    }
+    100% {
+      transform: scale(0) rotate(360deg);
+    }
+}
+.popup-card{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 88%;
+    height: max-content;
+    background-color: white;
+    animation-name: popup;
+    animation-duration: 10s all;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    transform: translateY(100%);
+    transition: 0.4s all;
+}
+.gmaps{
+    height:20vw;
+    position: relative;
+}
+.gmaps iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.popup-card-contact{
+    width: 76%;
+}
+.show-popup .popup-card{
+    transform: translateY(0);
+}
+
+@keyframes popup {
+    0%{
+      transform: translateY(100%);
+    }
+    100%{
+      transform: translateY(0);
+    }
+}
+
+/* ABOUT */
+.pop-upBox-about{
+    display: grid;
+    grid-template-columns:29% 51% 20%;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    padding-bottom: 2vw;
+}
+.image-about-box{
+    width: 100%;
+    height: 35vw;
+    position: relative;
+}
+.social-about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4vw;
+    margin-top: 2vw;
+}
+.social-about-image{
+    cursor: pointer;
+}
+.box-content-about{
+    padding-right: 5vw;
+    margin-left: 5.5vw;
+    padding-top: 1.5vw !important;
+}
+.box-content-about p{
+    font-size: 0.94vw;
+    padding-right: 3vw !important;
+    font-weight: 300;
+}
+.box-content-about img{
+    width: 33vw;
+    margin-bottom: 0;
+}
+.logo-box-about{
+    margin-top: 12.4vw;
+    display: block;
+}
+.logo-box-about h1{
+    font-size: 1.1vw;
+}
+.logo-box-about p{
+    font-size: 0.9vw;
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 1.4vw;
+}
+
+/* BLUECORN VIEW PAGE POPUP */
+.show-art{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    transition: all 0.5s;
+    z-index: 12;
+    opacity: 1;
+    background-image: url(../public/image/bg-pop-up.png);
+    background-position: top;
+    background-size: cover;
+}
+.hide-art{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2 !important;
+    height:100vh;
+    opacity:0;
+    transition: all 0.5s;
+    background-image: url(../public/image/background-about.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.popup-card-art{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    animation-name: popup;
+    animation-duration: 10s all;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    transform: translateY(100%);
+    transition: 0.4s all;
+}
+.show-art .popup-card-art{
+    transform: translateY(0);
+}
+/* BLUECORN POPUP VIEW */
+.popup-art{
+    display: grid;
+    grid-template-columns: 49% 31% 20%;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    padding-bottom: 6vw;
+}
+.image-box{
+    text-align: end;
+    width:100%;
+}
+.image-box-art{
+    width: 57%;
+    height: 34.9vw;
+    position: relative;
+    margin: auto;
+    margin-right: 6.5vw;
+}
+.image-box-art-ap{
+    width: 49% !important;
+    height: 40vw;
+    position: relative;
+    margin: auto;
+    margin-right: 6.5vw;
+}
+.image-box-art-abstrak{
+    width: 55% ;
+    height: 35vw;
+    position: relative;
+    margin: auto;
+    margin-right: 6.5vw;
+}
+.image-box-art-batangpohon{
+    width: 87% ;
+    height: 35vw;
+    position: relative;
+    margin: auto;
+    margin-right: 6.5vw;
+}
+.box-content{
+    padding-top: 3.5vw;
+    margin-left: 0;
+    padding-right: 5vh;
+}
+.box-content h1{
+    text-align: start;
+    text-transform: uppercase;
+    font-size: 6.4vh;
+    letter-spacing: 2px;
+}
+.box-content p{
+    margin-top: 0.7vw;
+    font-size: 2vh;
+    margin-bottom: 1vw;
+    padding-right: 2vw;
+    font-weight: 500;
+}
+.box-content span{
+    font-size: 1.8vh;
+    font-weight: 300;
+}
+.logo-box{
+    display: flex;
+    align-items: center;
+    height: max-content;
+    gap: 1vw;
+    margin-top: 5vw;
+    margin-left: 2vw;
+}
+.logo-box img{
+    width:6vw;
+}
+.logo-box p{
+    font-size: 1.8vw;
+}
+
+
+.show-art2{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+    transition: all 0.5s;
+    z-index: 12;
+    opacity: 1;
+    background-image: url(../public/image/bg-pop-up.png);
+    background-position: top;
+    background-size: cover;
+}
+.hide-art2{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2 !important;
+    height:100vh;
+    opacity:0;
+    transition: all 0.5s;
+    background-image: url(../public/image/background-about.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.popup-card-art2{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: max-content;
+    background-color: white;
+    animation-name: popup;
+    animation-duration: 10s all;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    transform: translateY(100%);
+    transition: 0.4s all;
+}
+.show-art2 .popup-card-art2{
+    transform: translateY(0);
+}
+.popup-art2{
+    display: grid;
+    grid-template-columns: 49% 31% 20%;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    padding-bottom: 6vw;
+}
+.image-box{
+    text-align: end;
+    width:100%;
+}
+.image-box-art{
+    width: 57%;
+    height: 34.9vw;
+    position: relative;
+    margin: auto;
+    margin-right: 6.5vw;
+}
+
+.logo-box{
+    display: flex;
+    align-items: center;
+    height: max-content;
+    gap: 1vw;
+    margin-top: 5vw;
+    margin-left: 2vw;
+}
+.logo-box img{
+    width:6vw;
+}
+.logo-box p{
+    font-size: 1.8vw;
+}
+
+@media(max-width:768px) {
+    .show-popup{
+        height: 100vh;
+        overflow-y: scroll !important;
+    }
+    .heading-popup{
+        font-size: 7vw;
+        padding-top: 5vw;
+        position: relative;
+    }
+    .popup-card{
+        height: max-content;
+        width:92%;
+        top: 0;
+        position: relative;
+    }
+    .pop-upBox-about{
+        grid-template-columns:100%;
+    }
+    .image-about-box{
+        height: 55vw;
+    }
+    .social-about{
+        gap: 4vw;
+        margin-top: 3vw;
+    }
+    .box-content-about{
+        padding-right: 2vw;
+        margin-left: 5.5vw;
+        padding-top: 1.5vw !important;
+    }
+    .box-content-about img{
+        width: 37vw;
+        margin-bottom: -2vw;
+    }
+    .box-content-about p{
+        font-size: 3.2vw;
+        text-align: justify;
+        padding-right: 3vw !important;
+    }
+    .logo-box-about{
+        margin-top: 0;
+        display: block;
+        margin-left: 5.5vw;
+    }
+    .logo-box-about h1{
+        font-size: 3.4vw;
+    }
+    .logo-box-about p{
+        font-size: 2.3vw;
+        font-style: italic;
+    }
+    .button-popup-about{
+        position: absolute;
+        top: 3%;
+        right: 6.3%;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+    .button-popup-contact{
+        position: absolute;
+        top: 3%;
+        right: 6.3%;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+    
+
+    .gmaps{
+        height: 60vw;
+        position: relative;
+    }
+    .gmaps iframe{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .pop-upBox-contact{
+        grid-template-columns: 100%;
+        padding: 4.5vw;
+    }
+    .contact-content{
+    grid-template-columns: 100%;
+    margin-top: 4vw;
+    padding: 1.5vw 2vw;
+    }
+    .contact-address h1{
+    font-size:5.7vw;
+    margin-bottom: 0.9vw;
+    }
+    .contact-address p{
+    font-size: 3.9vw;
+    }
+    .email-address ion-icon{
+    font-size: 3.2vw;
+    }
+    .email-address span{
+    font-size: 3.8vw;
+    }
+    .sosmed ion-icon{
+    font-size: 6.7vw;
+    }
+    .contact-form h1{
+    font-size: 3.8vw;
+    margin-top:1.4vw;
+    }
+    .form input{
+    margin-bottom: 1.8vw;
+    padding: 1.6vw 1.9vw;
+    font-size: 3.8vw;
+    border: 0.1vw solid black;
+    }
+    .form input::placeholder{
+    font-size: 3.8vw;
+    }
+    .form textarea{
+    margin-bottom: 1.8vw;
+    padding: 1.6vw 1.9vw;
+    font-size: 3.8vw;
+    }
+    .form textarea::placeholder{
+    font-size: 3.8vw;
+    }
+    .form button{
+    font-size: 3.8vw;
+    padding: 1.6vw;
+    }
+
+
+    
+    
+    
+    
+    
+}

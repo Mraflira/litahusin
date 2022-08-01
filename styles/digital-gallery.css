@@ -1,0 +1,182 @@
+/* SLIDER VIEW DIGITAL GALLERY */
+.swiper{
+    background-image: url(../public/image/digital-gallery.jpg);
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.swiper-slide{
+    width: 50% !important;
+    z-index: 2 !important;
+    text-align: center;
+    filter: blur(2vw) drop-shadow(5px 8px 11px rgba(43, 43, 43, 0.25));
+}
+.swiper-slide-active{
+    filter: blur(0) drop-shadow(0px 0px 0px transparent);
+}
+
+
+/* INFO BUTTON DIGITAL GALLERY VIEW PAGE */
+.info-button{
+    position: absolute;
+    top: 40vh;
+    right: -6vh;
+    background: white;
+    border: none;
+    width: 14vh;
+    height: 14vh;
+    border-radius: 9vw;
+    cursor: pointer;
+    font-size: 3vh;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 22px rgba(0, 95, 71, 0.17);
+    display: none;
+    z-index: 10; 
+}
+.swiper-slide-active .info-button{
+    display: block;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: info;
+}
+@keyframes info {
+    0% {
+      transform: scale(0) rotate(360deg);
+    }
+    100% {
+      transform: scale(1) rotate(0);
+    }
+}
+
+
+/* HEADING VIEW ART DIGITAL GALLERY */
+.swiper-slide h1{
+    text-transform: uppercase;
+    font-size: 4.7vh;
+    margin-top: 1vw;
+}
+.swiper-slide-active h1{
+    animation-duration: 0.7s;
+    animation-delay: 0s;
+    animation-iteration-count:1;
+    animation-name:heading;
+}
+@keyframes heading {
+    0% {
+      transform: translateY(150%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+/* LOGO IMAGE IN ART VIEW */
+.heading-image{
+    width: 14vh;
+    margin-top: 0.4vh;
+}
+.swiper-slide-active .heading-image{
+    animation-duration: 1.3s;
+    animation-delay: 0s;
+    animation-iteration-count:1;
+    animation-name:heading-image;
+}
+@keyframes heading-image {
+    0% {
+      transform: translateY(150%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+
+/* ARROWS SLIDE VIEW  */
+.swiper-button-prev {
+    background-image: url(../public/image/prev.png) !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    right: 14vh !important;
+    left: auto;
+}
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+    content: none !important;
+}
+.swiper-button-next {
+    background-image: url(../public/image/next.png) !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next{
+    left: 14vh !important;
+    right: auto;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+    content: none !important;
+}
+.swiper-button-next, .swiper-button-prev{
+    position: absolute;
+    top: 50%;
+    width: 8vh !important;
+    height: 3vh !important;
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+    z-index: 5 !important;
+}
+
+/* IMAGE ART VIEW */
+.bluecorn{
+    position: relative;
+    width: 52vh;
+    height: 63vh;
+    margin-top: 19.3vh !important;
+    margin: auto;
+}
+.anak-perempuan{
+    position: relative;
+    width: 45vh;
+    height: 64vh;
+    margin-top: 18.2vh !important;
+    margin: auto;
+}
+.abstrak{
+    position: relative;
+    width:49vh;
+    height: 63vh;
+    margin: auto;
+    margin-top: 19vh;
+}
+.batang-pohon{
+    position: relative;
+    width:83vh;
+    height: 63vh;
+    margin-top: 19vh !important;
+    margin: auto;
+    z-index: 8;
+}
+.swiper-slide-active img{
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: scaleArt;
+}
+@keyframes scaleArt {
+    0% {
+      opacity:0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+}

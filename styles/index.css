@@ -1,0 +1,111 @@
+.logo{
+    position: absolute;
+    left: 46%;
+    top: 4%;
+    z-index: 2;
+}
+.logo img{
+    width: 16.4vh;
+    z-index: 2;
+}
+
+/* INDEX PAGE VIEW */
+.header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../public/image/background-header.jpg);
+    overflow: hidden;
+    background-position: top;
+    background-size: cover;
+}
+.header .show-menu{
+    display: block;
+    height: 100vh;
+    transition: all 0.8s;
+    background-position: 80% 40%;
+    background-size: cover;
+    background-image: url(../public/image/background-menu.png);
+}
+.header .hide-menu{
+    display: block;
+    height: 100vh;
+    transition: all 0.8s;
+    background-position: 80% 40%;
+    background-size: cover;
+    background-image: url(../public/image/background-menu.png);
+}
+.header .hide-menu .menu-box{
+    display: block;
+}
+.header .menu-box ul li{
+    animation-name: none;
+    animation-duration: 0.7s;
+}
+.heading{
+    position: absolute;
+    left: 30%;
+    bottom: 20%;
+}
+.heading-logo{
+    position: relative;
+    width: 37vw;
+    height: 12vw;
+    margin-left: -7vw !important;
+    margin-bottom: 0.8vw;
+}
+.heading h1{
+    font-size: 4.8vw;
+    margin-top: -1.5vw;
+    letter-spacing: 5.3px;
+}
+.heading-desc{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 0.5vw;
+}
+.heading-desc p{
+    width: 16vw;
+    font-size: 0.95vw;
+    margin-top: -0.4vw;
+}
+.heading-desc button{
+    background: transparent;
+    width: 11.3vw;
+    height: 3.5vw;
+    font-size: 1vw;
+    border: 0.1vw solid black;
+    cursor: pointer;
+    transition: 0.5s all;
+    z-index: 6;
+}
+.heading-desc button:hover{
+    transform: scale(1.1);
+}
+
+/* COPYRIGHT VIEW */
+.copyright{
+    position: absolute;
+    left: 4vh;
+    bottom: 3vh;
+    font-size: 1.5vh;
+    font-weight: 600;
+    z-index: 8;
+}
+@media(max-width:768px) {
+    .heading-logo{
+        position: relative;
+        width: 49vw;
+        height: 16vw;
+        margin-left:auto !important;
+        margin: auto;
+        margin-bottom: 0.8vw;
+    }
+    .header .hide-menu{
+        height: 27vh;
+        transition: all 0.8s;
+    }
+    .hide-menu .menu-box{
+        display: none !important;
+    }
+}
