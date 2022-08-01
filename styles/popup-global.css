@@ -415,7 +415,7 @@
 
 @media(max-width:768px) {
     .button-popup-about{
-    top:30% !important;
+    top:17% !important;
 }
     .show-popup{
         height: 100vh;
