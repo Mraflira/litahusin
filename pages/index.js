@@ -10,7 +10,7 @@ export default function Home() {
     <div className="header">
         <div className="heading">
             <div className="heading-logo">
-              <Image src="/image/heading.png" layout="fill" objectFit="fit" />
+              <Image src="/image/heading.png" layout="fill" objectFit="fit" alt="Logo Lita Husin" />
             </div>
             <h1>DIGITAL GALLERY</h1>
             <div className="heading-desc">
