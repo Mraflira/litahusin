@@ -60,6 +60,12 @@
     }
   
   /* DIGITAL GALLERY */
+    .gallery-page{
+    width:100%;
+    height:93vh;
+    overflow-y:hidden;
+    background:green;
+}
     .swiper{
       background-position: center;
     }
