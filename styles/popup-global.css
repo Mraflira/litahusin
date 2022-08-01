@@ -429,7 +429,7 @@
     .popup-card{
         height: max-content;
         width:92%;
-        top: 0;
+        top: 10%;
         position: relative;
     }
     .pop-upBox-about{
